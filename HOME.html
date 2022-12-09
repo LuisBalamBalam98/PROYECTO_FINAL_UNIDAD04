@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home_desktop.css">
+  <link rel="stylesheet" href="home_movil.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="jquery.tinycarousel.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+  <script src="fancybox/jquery.fancybox.js"></script>
+  <script src="wow.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <!-- FUNCION SLIDER -->
+  <script>
+    $(function () {
+      $(".rslides").responsiveSlides();
+    });
+  </script>
+
+  <!-- FUNCION ABRIR MENU -->
+  <script>
+    $("#icon_menu").click(function () {
+      $("#menu").slideToggle();
+    });
+  </script>
+  <title>FOOD_DELIVERY</title>
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <header class="cabecera ancho">
+    <figure class="logo">
+      <i id="icon_menu" class="fas fa-bars"></i>
+      <img id="subir" src="imagenes/logo.png" alt="">
+    </figure>
+    <article class="contactos">
+      <nav class="ancho">
+        <ul id="menu" class="contenedor_menu">
+          <li><a class="sin_margin" href="HOME.html">HOME</a></li>
+          <li><a href="ABOUT_US.html">ABOUT US</a></li>
+          <li><a href="HOME.html">MENU</a></li>
+          <li><a href="HOME.html">PAGES</a></li>
+          <li><a href="GALLERY.html">GALLERY</a></li>
+          <li><a href="HOME.html">CONTACTS</a></li>
+          <li><a href="HOME.html">NEWS</a></li>
+        </ul>
+        <div class="carrito">
+          <i class="fa-solid fa-cart-shopping wow animate__animated animate__rotateOut animate__infinite"></i>
+          <p>(2)</p>
+        </div>
+      </nav>
+      <div class="contacto1">
+        <div class="icono_ubicacion">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="numero_contacto1">
+          <p class="info1">267 Park Avenue</p>
+          <p class="info1">New York, NY 90210</p>
+        </div>
+      </div>
+      <div class="contacto1">
+        <div class="icono_telefono">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="numero_contacto1">
+          <p class="info1">1-800-1234-567</p>
+          <p class="info1">Mon - Sat: 9:00-18:00</p>
+        </div>
+      </div>
+      <div class="redes_sociales">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+      </div>
+    </article>
+  </header>
+
+  <!-- SLIDER_AUTOMATICO -->
+  <section class="contenedor_slide" id="slider_contenedor">
+    <ul class="rslides">
+      <li><img src="imagenes/slider1.jpeg" alt="" /></li>
+      <li><img src="imagenes/slider2.jpg" alt="" /></li>
+      <li><img src="imagenes/slider3.jpg" alt="" /></li>
+      <li><img src="imagenes/slider4.jpeg" alt="" /></li>
+    </ul>
+
+    <div class="textos_slider1">
+      <p  class="wow animate__animated animate__zoomIn animate__delay-3s">------YOUR FAVORITE------</p>
+
+    </div>
+    <div class="textos_slider2">
+      <p class="wow animate__animated animate__zoomIn animate__delay-3s">FOOD DELIVERY SERVICE</p>
+    </div>
+    <div class="textos_slider3">
+      <p class="wow animate__animated animate__zoomIn animate__delay-3s">Welcome to Food Delivery, a place where you can order your favorite restaurant dishes, drinks, and desserts at
+        affordable price. We are glad to offer you the best food in the area to everyone.</p>
+    </div>
+    <br>
+    <div class="textos_slider4">
+      <a href="#" class="btn_verde">ORDER ONLINE</a>
+    </div>
+  </section>
+
+  <!-- CARROUSEL -->
+  <section id="carrousel1">
+    <article class="cont1_carrousel">
+      <p class="titulo_carrousel wow animate__animated animate__zoomIn">WELCOME TO FOOD DELIVERY</p>
+      <p class="texto_carrousel">
+        Food Delivery is the best way to find local restaurants that deliver to you or quickly order food online . <br>
+        Whether looking for breakfast, lunch, dinner or late night snack, we have it all.
+      </p>
+    </article>
+    <a class="buttons prev" href="#">
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <div class="viewport">
+      <ul class="overview">
+        <li>
+          <img src="imagenes/carrousel4.jpg" />
+          <div class="datos_carrousel">
+            <h3>1</h3>
+            <h2>Order of sushi</h2>
+            <p class="forma">$13.99</p>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/carrousel1.jpg" />
+          <div class="datos_carrousel">
+            <h3>2</h3>
+            <h2>Burgers <br>
+              at the price of one</h2>
+            <p class="forma">$17.99</p>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/carrousel2.jpg" />
+          <div class="datos_carrousel">
+            <h3>Mexican Day</h3>
+            <p class="forma">$14.99</p>
+          </div>
+        </li>
+        <li>
+          <img src="imagenes/carrousel3.jpg" />
+          <div class="datos_carrousel">
+            <h3>Fresh Menu</h3>
+            <p class="forma">$16.99</p>
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+    <a class="buttons next" href="#">
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </section>
+
+  <!-- PARRALLAXS -->
+  <section class="parrallaxs">
+    <br><br>
+    <h2 class="wow animate__animated animate__zoomIn">OUR MENU</h2>
+    <article class="platillos ancho">
+      <figure class="platillo sin_margen wow animate__animated animate__bounce">
+        <img src="imagenes/sushi_parrallaxs1.png" alt="">
+        <a href="#">Sushi</a>
+      </figure>
+
+      <figure class="platillo wow animate__animated animate__bounce">
+        <img src="imagenes/burger_parrallaxs2.png" alt="">
+        <a href="#">Burgers</a>
+      </figure>
+
+      <figure class="platillo wow animate__animated animate__bounce">
+        <img src="imagenes/pizza_parrallaxs3.png" alt="">
+        <a href="#">Pizzas</a>
+      </figure>
+    </article>
+    <br><br><br><br><br>
+    <article class="platillos ancho ">
+      <figure class="platillo sin_margen wow animate__animated animate__bounce">
+        <img src="imagenes/barbecue_parrallaxs4.png" alt="">
+        <a href="#">Barbecue</a>
+      </figure>
+
+      <figure class="platillo wow animate__animated animate__bounce">
+        <img src="imagenes/sandwich_parrallaxs5.png" alt="">
+        <a href="#">Sandwich</a>
+      </figure>
+
+      <figure class="platillo wow animate__animated animate__bounce">
+        <img src="imagenes/tacos_parrallaxs6.png" alt="">
+        <a href="#">Tacos</a>
+      </figure>
+    </article>
+    <br><br><br><br><br>
+  </section>
+  <section class="ofertas">
+    <article class="oferta ancho wow animate__animated animate__backInRight">
+      <p class="oferta_titulo1">BEST OFFERS</p>
+      <p class="oferta_titulo2">Cheek Pizza</p>
+      <p class="oferta_precio">$29.00</p>
+      <a href="#" class="btn_naranja">ORDER ONLINE</a>
+      <p class="oferta_descripcion">Enjoy the most popular pizza of Food Delivery</p>
+    </article>
+
+    <article class="oferta2 ancho wow animate__animated animate__backInRight">
+      <p class="oferta_titulo1">BEST OFFERS</p>
+      <p class="oferta_titulo2">Cheek Burger</p>
+      <p class="oferta_precio">$35.00</p>
+      <a href="#" class="btn_naranja">ORDER ONLINE</a>
+      <p class="oferta_descripcion">Enjoy the most popular burger of Food Delivery</p>
+    </article>
+  </section>
+  <br>
+
+  <!-- MAPS -->
+  <section class="ubicacion">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59616.42848961319!2d-89.670927827519!3d20.951439647009245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20delivery%20merida!5e0!3m2!1ses-419!2smx!4v1670554710688!5m2!1ses-419!2smx"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section> -->
+  <br>
+
+  <!-- FOOTER -->
+  <footer>
+    <article class="suscribe">
+      <h4>SUSCRIBE</h4>
+      <br>
+      <div class="opciones">
+        <div class="button_mail">
+          <p>Your Mail</p>
+        </div>
+        <a href="#" class="btn_naranja">SUSCRIBE</a>
+      </div>
+    </article>
+
+    <article class="redes_sociales2">
+      <h4>FOLLOW US</h4>
+      <br>
+      <div class="redes">
+        <div class="fondo_gris">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="fondo_gris">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="fondo_gris">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="fondo_gris">
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+    </article>
+
+    <article class="contact_us">
+      <h4>CONTACT US</h4>
+      <br>
+      <div class="contact1">
+        <i class="fa-solid fa-phone"></i>
+        <div class="texto_contact">
+          <p class="texto_contact1">+1 (409) 987–5874</p>
+          <p class="texto_contact2">We work every day 9:00–23:00</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="texto_footer">
+      <hr class="linea_gris">
+      <br>
+      <p>Food Delivery © 2022 Privacy Policy</p>
+    </article>
+
+    <a href="#"><i id="subir" class="flecha_naranja fa-solid fa-circle-chevron-up wow animate__animated animate__backInUp"></i>
+  </footer>
+
+  <!-- FUNCION CARROUSEL -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#carrousel1').tinycarousel();
+    });
+  </script>
+  <!-- FUNCION WOW -->
+  <script>
+    new WOW().init();
+  </script>
+  <!-- FUNCION JAVASCRIPT SUBIR_CONTENIDO_CON_FLECHA  -->
+  <script>
+    $(FOOD_DELIVERY).ready(function () {
+
+      $('#subir').click(function () {
+        $('body, html').animate({
+          scrollTop: '0px'
+        }, 900);
+      });
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $('#subir').slideDown(900);
+        } else {
+          $('#subir').slideUp(900);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
